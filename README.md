@@ -17,17 +17,23 @@ This project implements a comprehensive comparison of three different machine le
 
 ```
 .
-├── optional_GNN_GerardAsbert_MarinaRosell.ipynb    # Main notebook with all implementations
+├── README.md                                       # Project documentation
 ├── requirements.txt                                # Python dependencies
-├── README.md                                       # This file
-├── data/
-│   ├── demographics.csv                            # Subject metadata
-│   ├── nodes.csv                                   # Brain region names
-│   ├── FA/                                         # DTI-FA matrices (165 files)
-│   ├── GM/                                         # GM matrices (165 files)
-│   └── RS/                                         # RS matrices (165 files)
-└── output/                                         # Results and visualizations (generated)
+├── exercise/
+│   ├── optional_GNN_GerardAsbert_MarinaRosell.ipynb # Main notebook with all implementations
+│   └── optional_GNN_GerardAsbert_MarinaRosell.html  # Rendered HTML export of the main notebook
+├── GNN-example/
+│   ├── Example_1-1.ipynb                           # Reference/example GNN notebook
+│   └── Example_1-1.html                            # Rendered HTML export of the example notebook
+└── data/                                           # User-provided dataset folder
+    ├── demographics.csv                            # Subject metadata
+    ├── nodes.csv                                   # Brain region names
+    ├── FA/                                         # DTI-FA connectivity matrices
+    ├── GM/                                         # Grey matter connectivity matrices
+    └── RS/                                         # Resting-state fMRI connectivity matrices
 ```
+
+> The files inside the `data/` folder are not included in the repository. Place the corresponding dataset files inside it before running the main notebook.
 
 ## Installation
 
@@ -37,7 +43,7 @@ This project implements a comprehensive comparison of three different machine le
 
 ### Step 1: Clone/Download the Repository
 ```bash
-cd /path/to/GNN-example
+cd /path/to/C5_Optional_GNN
 ```
 
 ### Step 2: Create a Virtual Environment (Recommended)
@@ -66,19 +72,19 @@ pip install torch-geometric scikit-learn pandas numpy matplotlib seaborn network
 
 ### Method 1: Jupyter Notebook (Recommended)
 ```bash
-jupyter notebook optional_GNN_GerardAsbert.ipynb
+jupyter notebook exercise/optional_GNN_GerardAsbert_MarinaRosell.ipynb
 ```
 
 Then select "Run All Cells" or run cells sequentially using Shift+Enter.
 
 ### Method 2: Command Line
 ```bash
-jupyter nbconvert --to notebook --execute optional_GNN_GerardAsbert.ipynb
+jupyter nbconvert --to notebook --execute exercise/optional_GNN_GerardAsbert_MarinaRosell.ipynb
 ```
 
 ### Method 3: IPython
 ```bash
-ipython optional_GNN_GerardAsbert.ipynb
+ipython exercise/optional_GNN_GerardAsbert_MarinaRosell.ipynb
 ```
 
 ## Project Components
