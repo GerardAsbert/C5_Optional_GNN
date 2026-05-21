@@ -17,16 +17,16 @@ This project implements a comprehensive comparison of three different machine le
 
 ```
 .
-├── optional_GNN_GerardAsbert.ipynb    # Main notebook with all implementations
-├── requirements.txt                    # Python dependencies
-├── README.md                          # This file
+├── optional_GNN_GerardAsbert_MarinaRosell.ipynb    # Main notebook with all implementations
+├── requirements.txt                                # Python dependencies
+├── README.md                                       # This file
 ├── data/
-│   ├── demographics.csv               # Subject metadata
-│   ├── nodes.csv                      # Brain region names
-│   ├── FA/                            # DTI-FA matrices (165 files)
-│   ├── GM/                            # GM matrices (165 files)
-│   └── RS/                            # RS matrices (165 files)
-└── output/                            # Results and visualizations (generated)
+│   ├── demographics.csv                            # Subject metadata
+│   ├── nodes.csv                                   # Brain region names
+│   ├── FA/                                         # DTI-FA matrices (165 files)
+│   ├── GM/                                         # GM matrices (165 files)
+│   └── RS/                                         # RS matrices (165 files)
+└── output/                                         # Results and visualizations (generated)
 ```
 
 ## Installation
